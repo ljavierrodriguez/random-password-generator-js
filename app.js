@@ -20,10 +20,10 @@ const generatePassword = (hasUppercases = false, hasLowercases = true, hasNumber
         password.push(characters.charAt(Math.floor(Math.random() * characters.length)));
         i++;
     }
-    passGenerated.push(password.join(''))
     return password.join('');
 }
 
 let pass =  generatePassword(true, true, true, true, 18);
+passGenerated.push(pass);
 console.log(pass);
 console.log(passGenerated);
